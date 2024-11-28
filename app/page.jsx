@@ -1,45 +1,12 @@
+import dynamic from "next/dynamic";
+
+// Убедитесь, что `false` используется вместо `False`
+const Scene = dynamic(() => import("@/components/model/scene"), { ssr: false });
+
 export default function Home() {
   return (
-    <div>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur doloremque corrupti, labore optio fugiat quos aut aspernatur maiores voluptate quod modi earum exercitationem ipsam quas mollitia iste repudiandae unde assumenda.
-      </p>
+    <div style={{ width: "100%", height: "100vh" }}>
+      <Scene />
     </div>
   );
 }

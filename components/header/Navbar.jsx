@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -20,7 +20,7 @@ export default function Navbar() {
                 <Link
                     key={link.path}
                     href={link.path}
-                    className={`capitalize transition-all ${link.path === pathname
+                    className={`capitalize font-medium hover:text-accent transition-all ${link.path === pathname
                         ? "text-accent border-accent border-b-2"
                         : ""}`
                     }>

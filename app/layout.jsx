@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
 
 import { JetBrains_Mono } from "next/font/google"
 import "./globals.css"
+//import "./normalize.css"
 
 // components
 import Header from "@/components/header/Header";
@@ -56,7 +57,9 @@ export default function RootLayout({ children }) {
         <div className="max-w-4xl mx-auto px-8">
           {/* Заголовок страницы */}
           <Header />
-          {children}
+          <div className="max-w-2xl mx-auto px-8">
+            {children}
+          </div>
         </div>
       </body>
     </html>
