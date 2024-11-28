@@ -41,6 +41,11 @@ module.exports = {
 					DEFAULT: "#88ccca",
 					hover: "#7fb5b5",
 				},
+				// Эффект размытие
+				backdropBlur: {
+					sm: '4px',
+					lg: '16px',
+				},
 			},
 		},
 	},

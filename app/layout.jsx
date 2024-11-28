@@ -53,8 +53,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <body className={jetbrainsMono.variable}>
-        <Header />
-        {children}
+        <div className="max-w-4xl mx-auto px-8">
+          {/* Заголовок страницы */}
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
