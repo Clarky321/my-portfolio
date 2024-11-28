@@ -2,18 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
+/* ---------- Базовые стили ---------- */
 @layer base {
-  :root {
-    --radius: 0.5rem;
+
+  /* Гладкий скролл для всей страницы */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Базовый набор: шрифт, фон, цвет текста, отступ */
+  body {
+    @apply font-primary bg-primary text-white leading-loose;
   }
 }
