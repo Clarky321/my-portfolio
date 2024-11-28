@@ -7,3 +7,8 @@ Would you like to use `src/` directory? ... No
 Would you like to use App Router? (recommended) ... Yes
 Would you like to customize the default import alias (@/*)? ... No
 
+2. npm shadcn@latest init
+
+Which style would you like to use? » Default
+Which color would you like to use as the base color? » Slate
+Would you like to use CSS variables for theming? ... no
