@@ -12,3 +12,13 @@ Would you like to customize the default import alias (@/*)? ... No
 Which style would you like to use? » Default
 Which color would you like to use as the base color? » Slate
 Would you like to use CSS variables for theming? ... no
+
+3. shadcn@latest add
+input - поле ввода
+button - кнопка
+scroll-area - функция прокрутки
+select - выборка из списка опций
+sheet - элемент для боковой панели
+tabs - набор разделов
+textarea - блок для текстовой области
+tooltip - всплывающее окно
