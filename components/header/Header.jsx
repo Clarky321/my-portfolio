@@ -12,7 +12,7 @@ export default function Header() {
             <div className="container mx-auto">
                 <Link href="/">
                     <h1 className="text-lg font-semibold">
-                    <span className="text-accent">.</span> Рябов Сергей
+                        <span className="text-accent">.</span> Рябов Сергей
                     </h1>
                 </Link>
             </div>

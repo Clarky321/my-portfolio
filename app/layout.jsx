@@ -33,7 +33,6 @@ export default function RootLayout({ children }) {
 
 import { JetBrains_Mono } from "next/font/google"
 import "./globals.css"
-//import "./normalize.css"
 
 // components
 import Header from "@/components/header/Header";

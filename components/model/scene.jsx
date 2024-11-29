@@ -2,7 +2,7 @@
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useProgress, Html } from "@react-three/drei";
-import Model from "./model";
+import Model from "./Model";
 import { Suspense } from "react";
 
 // Компонент для отображения прогресса загрузки
@@ -17,8 +17,7 @@ export default function Scene() {
       gl={{ antialias: true }}
       dpr={[1, 1.5]}
       shadows
-      camera={{ position: [0, 1, 5], fov: 50 }}
-    >
+      camera={{ position: [0, 1, 5], fov: 50 }}>
       {/* Освещение */}
       <ambientLight intensity={0.3} />
       <directionalLight position={[10, 10, 10]} intensity={1.5} castShadow />
