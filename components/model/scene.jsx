@@ -17,7 +17,7 @@ export default function Scene() {
       gl={{ antialias: true }}
       dpr={[1, 1.5]}
       shadows
-      camera={{ position: [0, 1, 5], fov: 50 }}>
+      camera={{ position: [2, 2, 5], fov: 50 }}>
       {/* Освещение */}
       <ambientLight intensity={0.3} />
       <directionalLight position={[10, 10, 10]} intensity={1.5} castShadow />

@@ -7,13 +7,6 @@ import Avatars from "@/components/homepage/Avatars";
 import Socail from "@/components/homepage/Social";
 import Biography from "@/components/homepage/Biography";
 
-
-{/* 
-    <div style={{ width: "100%", height: "100vh" }}>
-      <Scene />
-    </div>
-*/}
-
 export default function Home() {
   return (
     <section className="h-full">
@@ -22,6 +15,12 @@ export default function Home() {
         <div style={{ width: "100%", height: "50vh" }}>
           {/* 3D модель */}
           <Scene />
+        </div>
+
+        <div className="pb-6">
+          <form className="flex flex-col p-4 bg-[#313134] rounded-xl">
+            <span className="text-center">Привет я мастер фломастер </span>
+          </form>
         </div>
 
         {/* Заголовок с аватаром */}
@@ -34,7 +33,7 @@ export default function Home() {
         </div>
 
         {/* Раздел "О себе" */}
-        <div className="space-y-2">
+        <div className="space-y-6">
           <h3 className="text-2xl font-semibold border-b-2 pb-2">
             О себе
           </h3>
@@ -52,10 +51,10 @@ export default function Home() {
               <HiDownload className="text-xl" />
             </Button>
 
-            <div className="mb-8 xl:mb-0">
+            <div className="flex flex-col items-center">
               {/* Cоциальные иконки */}
               <Socail
-                containerStyle="flex gap-6"
+                containerStyle="flex gap-6 justify-center"
                 iconStyle="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
               />
             </div>

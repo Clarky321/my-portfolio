@@ -5,7 +5,7 @@ import * as THREE from "three"; // Импортируем THREE
 export default function Model() {
 
   const group = useRef(); // Реф для группы
-  const { scene, animations } = useGLTF("/models/technical_difficulties.glb"); // Загружаем модель и анимации
+  const { scene, animations } = useGLTF("/models/nika.glb"); // Загружаем модель и анимации
   const { actions, clips } = useAnimations(animations, group); // Используем анимации
 
   // Лог анимационных клипов (полезно для отладки)
@@ -29,4 +29,4 @@ export default function Model() {
 }
 
 // Прелоад для оптимизации
-useGLTF.preload("/models/technical_difficulties.glb");
+useGLTF.preload("/models/nika.glb");
